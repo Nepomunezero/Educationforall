@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Education For All</title>
+
+    <link rel="stylesheet" href="../shared/css/users.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>Education For All</h2>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="library.html">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Library</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="translator.html">
+                    <i class="fa-solid fa-language"></i>
+                    <span>Translator</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="favorites.html">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>Favorites</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>History</span>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <header class="topbar">
+
+            <div>
+                <h1>My Profile</h1>
+                <p>View and update your personal information.</p>
+            </div>
+
+            <div class="user-profile">
+                <i class="fa-solid fa-circle-user"></i>
+                <span>Jean Nepo</span>
+            </div>
+
+        </header>
+
+        <!-- User Overview -->
+
+        <section class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-book"></i>
+                <h3>Resources Read</h3>
+                <p>24</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-download"></i>
+                <h3>Downloads</h3>
+                <p>18</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-heart"></i>
+                <h3>Favorites</h3>
+                <p>12</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-language"></i>
+                <h3>Translations</h3>
+                <p>9</p>
+            </div>
+
+        </section>
+
+        <!-- Personal Information -->
+
+        <section class="activity">
+
+            <h2>
+                <i class="fa-solid fa-user"></i>
+                Personal Information
+            </h2>
+
+            <form>
+
+                <img src="../admin/images/profile.png"
+                     alt="Profile Picture"
+                     class="profile-image">
+
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    value="Jean Nepo">
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    value="jean@example.com">
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    value="+250 7XX XXX XXX">
+
+                <input
+                    type="text"
+                    placeholder="Country"
+                    value="Rwanda">
+
+                <select>
+
+                    <option>Student</option>
+                    <option>Teacher</option>
+                    <option>Translator</option>
+
+                </select>
+
+                <button type="submit">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    Save Changes
+                </button>
+
+            </form>
+
+        </section>
+
+        <br>
+
+        <!-- Change Password -->
+
+        <section class="activity">
+
+            <h2>
+                <i class="fa-solid fa-lock"></i>
+                Change Password
+            </h2>
+
+            <form>
+
+                <input
+                    type="password"
+                    placeholder="Current Password">
+
+                <input
+                    type="password"
+                    placeholder="New Password">
+
+                <input
+                    type="password"
+                    placeholder="Confirm New Password">
+
+                <button type="submit">
+                    <i class="fa-solid fa-key"></i>
+                    Update Password
+                </button>
+
+            </form>
+
+        </section>
+
+        <br>
+
+        <!-- Preferences -->
+
+        <section class="activity">
+
+            <h2>
+                <i class="fa-solid fa-gear"></i>
+                Preferences
+            </h2>
+
+            <form>
+
+                <label>
+                    <input type="checkbox" checked>
+                    Receive Email Notifications
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="checkbox" checked>
+                    Notify me about newly uploaded books
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="checkbox">
+                    Enable Dark Mode
+                </label>
+
+                <br>
+
+                <label>
+                    Preferred Language
+                </label>
+
+                <select>
+
+                    <option>English</option>
+                    <option>Kinyarwanda</option>
+                    <option>French</option>
+                    <option>Swahili</option>
+
+                </select>
+
+                <button type="submit">
+                    <i class="fa-solid fa-check"></i>
+                    Save Preferences
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../shared/js/main.js"></script>
+
+</body>
+
+</html>

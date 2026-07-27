@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Education For All</title>
+
+    <link rel="stylesheet" href="../shared/css/admin.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>Education For All</h2>
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="users.html">
+                    <i class="fa-solid fa-users"></i>
+                    Users
+                </a>
+            </li>
+
+            <li>
+                <a href="resources.html">
+                    <i class="fa-solid fa-book"></i>
+                    Resources
+                </a>
+            </li>
+
+            <li>
+                <a href="reports.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Reports
+                </a>
+            </li>
+
+            <li>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="../users/login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <div>
+                <h1>Admin Dashboard</h1>
+                <p>Welcome back, Administrator.</p>
+            </div>
+
+            <div class="admin-profile">
+                <i class="fa-solid fa-user-shield"></i>
+                <span>Admin</span>
+            </div>
+
+        </header>
+
+        <!-- Statistics -->
+        <section class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-user-graduate"></i>
+                <h3>Students</h3>
+                <p>420</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h3>Teachers</h3>
+                <p>35</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-language"></i>
+                <h3>Translators</h3>
+                <p>18</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-book-open"></i>
+                <h3>Resources</h3>
+                <p>275</p>
+            </div>
+
+        </section>
+
+        <!-- Dashboard Content -->
+        <section class="dashboard-grid">
+
+            <!-- Recent Activity -->
+            <div class="activity">
+
+                <h2>Recent Activity</h2>
+
+                <ul>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        New teacher registered.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Translator uploaded a translated lesson.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Student downloaded Mathematics notes.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        New learning resource approved.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+
+                <h2>Quick Actions</h2>
+
+                <button onclick="location.href='users.html'">
+                    <i class="fa-solid fa-users"></i>
+                    Manage Users
+                </button>
+
+                <button onclick="location.href='resources.html'">
+                    <i class="fa-solid fa-book"></i>
+                    Manage Resources
+                </button>
+
+                <button onclick="location.href='reports.html'">
+                    <i class="fa-solid fa-chart-line"></i>
+                    View Reports
+                </button>
+
+                <button onclick="location.href='settings.html'">
+                    <i class="fa-solid fa-gear"></i>
+                    System Settings
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

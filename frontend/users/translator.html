@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator | Education For All</title>
+
+    <link rel="stylesheet" href="../shared/css/users.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>Education For All</h2>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="library.html">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Library</span>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="translator.html">
+                    <i class="fa-solid fa-language"></i>
+                    <span>Translator</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="favorites.html">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>Favorites</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>History</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <header class="topbar">
+
+            <div>
+                <h1>Translation Workspace</h1>
+                <p>Translate educational content into your preferred language.</p>
+            </div>
+
+            <div class="user-profile">
+                <i class="fa-solid fa-circle-user"></i>
+                <span>Welcome, Jean</span>
+            </div>
+
+        </header>
+
+        <!-- Translation Statistics -->
+
+        <section class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-language"></i>
+                <h3>Translations</h3>
+                <p>9</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-file-lines"></i>
+                <h3>Documents</h3>
+                <p>5</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-clock"></i>
+                <h3>Hours Saved</h3>
+                <p>14</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-check-circle"></i>
+                <h3>Completed</h3>
+                <p>27</p>
+            </div>
+
+        </section>
+
+        <!-- Translation Settings -->
+
+        <section class="activity">
+
+            <h2>Translation Settings</h2>
+
+            <form>
+
+                <select>
+                    <option>Source Language</option>
+                    <option>English</option>
+                    <option>Kinyarwanda</option>
+                    <option>French</option>
+                    <option>Swahili</option>
+                </select>
+
+                <select>
+                    <option>Target Language</option>
+                    <option>Kinyarwanda</option>
+                    <option>English</option>
+                    <option>French</option>
+                    <option>Swahili</option>
+                </select>
+
+                <input type="file">
+
+            </form>
+
+        </section>
+
+        <br>
+
+        <!-- Translation Workspace -->
+
+        <section class="dashboard-grid">
+
+            <!-- Source -->
+
+            <div class="activity">
+
+                <h2>Source Text</h2>
+
+                <textarea rows="18"
+                    placeholder="Paste the text you want to translate here..."></textarea>
+
+            </div>
+
+            <!-- Translation -->
+
+            <div class="activity">
+
+                <h2>Translated Text</h2>
+
+                <textarea rows="18"
+                    placeholder="The translated text will appear here..."
+                    readonly></textarea>
+
+            </div>
+
+        </section>
+
+        <br>
+
+        <!-- Action Buttons -->
+
+        <section class="quick-actions">
+
+            <h2>Translation Actions</h2>
+
+            <button>
+                <i class="fa-solid fa-language"></i>
+                Translate
+            </button>
+
+            <button>
+                <i class="fa-solid fa-copy"></i>
+                Copy Translation
+            </button>
+
+            <button>
+                <i class="fa-solid fa-download"></i>
+                Download
+            </button>
+
+            <button>
+                <i class="fa-solid fa-bookmark"></i>
+                Save Translation
+            </button>
+
+            <button>
+                <i class="fa-solid fa-eraser"></i>
+                Clear
+            </button>
+
+        </section>
+
+        <br>
+
+        <!-- Recent Translations -->
+
+        <section class="activity">
+
+            <h2>Recent Translations</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Date</th>
+                        <th>Document</th>
+                        <th>Languages</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>15 Jul 2026</td>
+                        <td>Basic Algebra</td>
+                        <td>English → Kinyarwanda</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>14 Jul 2026</td>
+                        <td>Physics Notes</td>
+                        <td>English → French</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>12 Jul 2026</td>
+                        <td>Chemistry Notes</td>
+                        <td>English → Swahili</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>10 Jul 2026</td>
+                        <td>Programming Basics</td>
+                        <td>French → English</td>
+                        <td>Completed</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../shared/js/main.js"></script>
+
+</body>
+
+</html>

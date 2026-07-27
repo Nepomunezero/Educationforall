@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Education For All</title>
+
+    <link rel="stylesheet" href="../shared/css/admin.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>Education For All</h2>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="users.html">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Users</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="resources.html">
+                    <i class="fa-solid fa-book"></i>
+                    <span>Resources</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="reports.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Reports</span>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="../users/login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>System Settings</h1>
+                <p>Manage platform and administrator preferences.</p>
+            </div>
+
+            <div class="admin-profile">
+                <i class="fa-solid fa-user-shield"></i>
+                <span>Administrator</span>
+            </div>
+
+        </header>
+
+        <!-- Profile Settings -->
+
+        <section class="activity">
+
+            <h2>
+                <i class="fa-solid fa-user"></i>
+                Administrator Profile
+            </h2>
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    value="Jean Nepo Munezero">
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    value="admin@educationforall.com">
+
+                <input
+                    type="text"
+                    placeholder="Phone Number"
+                    value="+250 7XX XXX XXX">
+
+                <button type="submit">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    Save Profile
+                </button>
+
+            </form>
+
+        </section>
+
+        <br>
+
+        <!-- Password -->
+
+        <section class="activity">
+
+            <h2>
+                <i class="fa-solid fa-lock"></i>
+                Change Password
+            </h2>
+
+            <form>
+
+                <input
+                    type="password"
+                    placeholder="Current Password">
+
+                <input
+                    type="password"
+                    placeholder="New Password">
+
+                <input
+                    type="password"
+                    placeholder="Confirm New Password">
+
+                <button type="submit">
+                    <i class="fa-solid fa-key"></i>
+                    Update Password
+                </button>
+
+            </form>
+
+        </section>
+
+        <br>
+
+        <!-- Platform Settings -->
+
+        <section class="activity">
+
+            <h2>
+                <i class="fa-solid fa-sliders"></i>
+                Platform Settings
+            </h2>
+
+            <form>
+
+                <label>Platform Name</label>
+
+                <input
+                    type="text"
+                    value="Education For All">
+
+                <label>Default Language</label>
+
+                <select>
+                    <option>English</option>
+                    <option>Kinyarwanda</option>
+                    <option>French</option>
+                    <option>Swahili</option>
+                </select>
+
+                <label>Default User Role</label>
+
+                <select>
+                    <option>Student</option>
+                    <option>Teacher</option>
+                    <option>Translator</option>
+                </select>
+
+                <button type="submit">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    Save Settings
+                </button>
+
+            </form>
+
+        </section>
+
+        <br>
+
+        <!-- Notification Preferences -->
+
+        <section class="activity">
+
+            <h2>
+                <i class="fa-solid fa-bell"></i>
+                Notifications
+            </h2>
+
+            <form>
+
+                <label>
+                    <input type="checkbox" checked>
+                    Email Notifications
+                </label>
+
+                <br><br>
+
+                <label>
+                    <input type="checkbox" checked>
+                    New User Registration Alerts
+                </label>
+
+                <br><br>
+
+                <label>
+                    <input type="checkbox">
+                    Weekly Summary Reports
+                </label>
+
+                <br><br>
+
+                <button type="submit">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    Save Preferences
+                </button>
+
+            </form>
+
+        </section>
+
+        <br>
+
+        <!-- Security -->
+
+        <section class="activity">
+
+            <h2>
+                <i class="fa-solid fa-shield-halved"></i>
+                Security
+            </h2>
+
+            <form>
+
+                <label>
+                    <input type="checkbox" checked>
+                    Enable Two-Factor Authentication
+                </label>
+
+                <br><br>
+
+                <label>
+                    <input type="checkbox" checked>
+                    Require Strong Passwords
+                </label>
+
+                <br><br>
+
+                <label>
+                    <input type="checkbox">
+                    Allow Multiple Device Login
+                </label>
+
+                <br><br>
+
+                <button type="submit">
+                    <i class="fa-solid fa-lock"></i>
+                    Save Security Settings
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

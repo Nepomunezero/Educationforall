@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users | Education For All</title>
+
+    <link rel="stylesheet" href="../shared/css/admin.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>Education For All</h2>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="users.html">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Users</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="resources.html">
+                    <i class="fa-solid fa-book"></i>
+                    <span>Resources</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="reports.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Reports</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="../users/login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>User Management</h1>
+                <p>Manage all users registered on the platform.</p>
+            </div>
+
+            <div class="admin-profile">
+                <i class="fa-solid fa-user-shield"></i>
+                <span>Administrator</span>
+            </div>
+
+        </header>
+
+        <!-- Summary Cards -->
+
+        <section class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-users"></i>
+                <h3>Total Users</h3>
+                <p>473</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-user-graduate"></i>
+                <h3>Students</h3>
+                <p>420</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h3>Teachers</h3>
+                <p>35</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-language"></i>
+                <h3>Translators</h3>
+                <p>18</p>
+            </div>
+
+        </section>
+
+        <!-- Add User -->
+
+        <section class="activity">
+
+            <h2>Add New User</h2>
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    required>
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    required>
+
+                <select required>
+                    <option value="">Select Role</option>
+                    <option>Student</option>
+                    <option>Teacher</option>
+                    <option>Translator</option>
+                    <option>Administrator</option>
+                </select>
+
+                <input
+                    type="password"
+                    placeholder="Temporary Password"
+                    required>
+
+                <button type="submit">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Create User
+                </button>
+
+            </form>
+
+        </section>
+
+        <br>
+
+        <!-- Search -->
+
+        <section class="activity">
+
+            <h2>Search Users</h2>
+
+            <input
+                type="text"
+                placeholder="Search by name or email">
+
+            <br><br>
+
+            <select>
+                <option>All Roles</option>
+                <option>Students</option>
+                <option>Teachers</option>
+                <option>Translators</option>
+                <option>Administrators</option>
+            </select>
+
+        </section>
+
+        <br>
+
+        <!-- Users Table -->
+
+        <section class="activity">
+
+            <h2>Registered Users</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>001</td>
+                        <td>Jean Nepo</td>
+                        <td>jean@example.com</td>
+                        <td>Administrator</td>
+                        <td>Active</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>002</td>
+                        <td>Alice Uwase</td>
+                        <td>alice@example.com</td>
+                        <td>Student</td>
+                        <td>Active</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>003</td>
+                        <td>Patrick Mugisha</td>
+                        <td>patrick@example.com</td>
+                        <td>Teacher</td>
+                        <td>Active</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>004</td>
+                        <td>Grace Mukamana</td>
+                        <td>grace@example.com</td>
+                        <td>Translator</td>
+                        <td>Inactive</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

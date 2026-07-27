@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | Education For All</title>
+
+    <link rel="stylesheet" href="../shared/css/admin.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>Education For All</h2>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="users.html">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Users</span>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="resources.html">
+                    <i class="fa-solid fa-book"></i>
+                    <span>Resources</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="reports.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Reports</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="../users/login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <div>
+                <h1>Learning Resources</h1>
+                <p>Manage books, notes, videos, and other educational content.</p>
+            </div>
+
+            <div class="admin-profile">
+                <i class="fa-solid fa-user-shield"></i>
+                <span>Administrator</span>
+            </div>
+
+        </header>
+
+        <!-- Quick Statistics -->
+
+        <section class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-book"></i>
+                <h3>Total Resources</h3>
+                <p>275</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-file-pdf"></i>
+                <h3>Documents</h3>
+                <p>150</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-video"></i>
+                <h3>Videos</h3>
+                <p>70</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-language"></i>
+                <h3>Translations</h3>
+                <p>55</p>
+            </div>
+
+        </section>
+
+        <!-- Upload Form -->
+
+        <section class="activity">
+
+            <h2>Upload New Resource</h2>
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Resource Title"
+                    required>
+
+                <select required>
+                    <option value="">Select Category</option>
+                    <option>Mathematics</option>
+                    <option>Science</option>
+                    <option>Technology</option>
+                    <option>Languages</option>
+                    <option>Engineering</option>
+                </select>
+
+                <select required>
+                    <option value="">Resource Type</option>
+                    <option>Book</option>
+                    <option>PDF</option>
+                    <option>Video</option>
+                    <option>Presentation</option>
+                </select>
+
+                <input type="file">
+
+                <textarea
+                    rows="4"
+                    placeholder="Short Description"></textarea>
+
+                <button type="submit">
+                    <i class="fa-solid fa-upload"></i>
+                    Upload Resource
+                </button>
+
+            </form>
+
+        </section>
+
+        <br>
+
+        <!-- Search -->
+
+        <section class="activity">
+
+            <h2>Search Resources</h2>
+
+            <input
+                type="text"
+                placeholder="Search by title, subject, or category">
+
+        </section>
+
+        <br>
+
+        <!-- Resources Table -->
+
+        <section class="activity">
+
+            <h2>Available Resources</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>001</td>
+                        <td>Basic Algebra</td>
+                        <td>Mathematics</td>
+                        <td>PDF</td>
+                        <td>Published</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>002</td>
+                        <td>Physics Notes</td>
+                        <td>Science</td>
+                        <td>Book</td>
+                        <td>Published</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>003</td>
+                        <td>Introduction to HTML</td>
+                        <td>Technology</td>
+                        <td>Video</td>
+                        <td>Pending</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>004</td>
+                        <td>French Translation Guide</td>
+                        <td>Languages</td>
+                        <td>PDF</td>
+                        <td>Published</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
