@@ -40,9 +40,9 @@ const translations = {
         sourceLanguageOption: "Source Language",
         targetLanguageOption: "Target Language",
         sourceTextTitle: "Source Text",
-        sourceTextPlaceholder: "Paste the text you want to translate here...",
+        sourceTextPlaceholder: "text to translate",
         translatedTextTitle: "Translated Text",
-        translatedTextPlaceholder: "The translated text will appear here...",
+        translatedTextPlaceholder: "The translated text will be put here...",
         translationActionsTitle: "Translation Actions",
         copyTranslation: "Copy Translation",
         saveTranslation: "Save Translation",
@@ -85,7 +85,7 @@ const translations = {
         filterAllSubjects: "All Subjects",
         filterAllLanguages: "All Languages",
         filterAllTypes: "All Types",
-        availableResourcesTitle: "Available Resources",
+        availableResourcesTitle: "Recent Resources",
         recentlyAccessedTitle: "Recently Accessed"
 
     },
@@ -175,7 +175,7 @@ const translations = {
         filterAllSubjects: "Ibyigwa byose",
         filterAllLanguages: "Indimi zose",
         filterAllTypes: "Ubwoko bwose",
-        availableResourcesTitle: "Ibyatangiwe birahari",
+        availableResourcesTitle: "Ibihari bya mukanya",
         recentlyAccessedTitle: "Byasomwe vuba"
 
     }

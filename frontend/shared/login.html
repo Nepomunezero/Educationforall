@@ -93,54 +93,76 @@
 
 <script src="shared/js/main.js"></script>
 
+
 <script>
 
 const togglePassword = document.getElementById("togglePassword");
 const password = document.getElementById("password");
 
+
+// Show / hide password
 togglePassword.addEventListener("click", () => {
 
-    if(password.type === "password"){
+    if (password.type === "password") {
 
         password.type = "text";
-        togglePassword.classList.replace("fa-eye","fa-eye-slash");
 
-    }else{
+        togglePassword.classList.replace(
+            "fa-eye",
+            "fa-eye-slash"
+        );
+
+    } else {
 
         password.type = "password";
-        togglePassword.classList.replace("fa-eye-slash","fa-eye");
+
+        togglePassword.classList.replace(
+            "fa-eye-slash",
+            "fa-eye"
+        );
 
     }
 
 });
 
-document.getElementById("loginForm").addEventListener("submit",(e)=>{
 
-    e.preventDefault();
+// Login
+document.getElementById("loginForm").addEventListener(
+    "submit",
+    (e) => {
 
-    const role=document.getElementById("role").value;
+        e.preventDefault();
 
-    if(role==="student"){
-        window.location.href="users/student/dashboard.html";
+        const role = document.getElementById("role").value;
+
+
+        // Administrator
+        if (role === "admin") {
+
+            window.location.href = "../admin/dashboard.html";
+
+        }
+
+        // All other users
+        else if (
+            role === "student" ||
+            role === "teacher" ||
+            role === "translator"
+        ) {
+
+            window.location.href = "../users/dashboard.html";
+
+        }
+
+        // No role selected
+        else {
+
+            alert("Please select a role.");
+
+        }
+
     }
-
-    else if(role==="teacher"){
-        window.location.href="users/teacher/dashboard.html";
-    }
-
-    else if(role==="translator"){
-        window.location.href="users/translator/dashboard.html";
-    }
-
-    else if(role==="admin"){
-        window.location.href="admin/dashboard.html";
-    }
-
-    else{
-        alert("Please select a role.");
-    }
-
-});
+);
 
 </script>
 
