@@ -168,66 +168,70 @@
                     </tr>
 
                 </thead>
-
-                <tbody>
-
-                    <tr>
-                        <td>001</td>
-                        <td>Jean Nepo</td>
-                        <td>jean@example.com</td>
-                        <td>Administrator</td>
-                        <td>Active</td>
-                        <td>
-                            <button>Edit</button>
-                            <button>Delete</button>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>002</td>
-                        <td>Alice Uwase</td>
-                        <td>alice@example.com</td>
-                        <td>Student</td>
-                        <td>Active</td>
-                        <td>
-                            <button>Edit</button>
-                            <button>Delete</button>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>003</td>
-                        <td>Patrick Mugisha</td>
-                        <td>patrick@example.com</td>
-                        <td>Teacher</td>
-                        <td>Active</td>
-                        <td>
-                            <button>Edit</button>
-                            <button>Delete</button>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>004</td>
-                        <td>Grace Mukamana</td>
-                        <td>grace@example.com</td>
-                        <td>Translator</td>
-                        <td>Inactive</td>
-                        <td>
-                            <button>Edit</button>
-                            <button>Delete</button>
-                        </td>
-                    </tr>
-
+                <tbody id="usersTableBody">
+                    <!-- Users will be loaded here -->
                 </tbody>
 
             </table>
 
         </section>
 
+        <section class="activity" id="editUserSection" style="display: none;">
+
+            <h2>Edit User</h2>
+
+            <form id="editUserForm">
+
+                <input
+                    type="text"
+                    id="editUserId"
+                    readonly>
+
+                <input
+                    type="text"
+                    id="editName"
+                    placeholder="Full Name"
+                    required>
+
+                <input
+                    type="email"
+                    id="editEmail"
+                    placeholder="Email Address"
+                    required>
+
+                <input
+                    type="text"
+                    id="editPhone"
+                    placeholder="Phone Number"
+                    required>
+
+                <select id="editRole" required>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="translator">Translator</option>
+                    <option value="administrator">Administrator</option>
+                </select>
+
+                <button type="submit">
+                    <i class="fa-solid fa-save"></i>
+                    Save Changes
+                </button>
+
+                <button
+                    type="button"
+                    onclick="cancelEdit()">
+                    Cancel
+                </button>
+
+            </form>
+
+        </section>
+
     </main>
 
 </div>
+
+    <script src="js/users.js"></script>
 
 </body>
 </html>
