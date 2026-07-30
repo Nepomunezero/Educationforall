@@ -30,49 +30,37 @@
             <li>
                 <a href="dashboard.html">
                     <i class="fa-solid fa-house"></i>
-                    <span>Dashboard</span>
+                    <span data-lang="dashboardTitle">Dashboard</span>
                 </a>
             </li>
 
             <li class="active">
                 <a href="library.html">
                     <i class="fa-solid fa-book-open"></i>
-                    <span>Library</span>
+                    <span data-lang="library">Library</span>
                 </a>
             </li>
 
             <li>
                 <a href="translator.html">
                     <i class="fa-solid fa-language"></i>
-                    <span>Translator</span>
+                    <span data-lang="translator">Translator</span>
                 </a>
             </li>
 
-            <li>
-                <a href="favorites.html">
-                    <i class="fa-solid fa-heart"></i>
-                    <span>Favorites</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="history.html">
-                    <i class="fa-solid fa-clock-rotate-left"></i>
-                    <span>History</span>
-                </a>
-            </li>
+            
 
             <li>
                 <a href="profile.html">
                     <i class="fa-solid fa-user"></i>
-                    <span>Profile</span>
+                    <span data-lang="profile">Profile</span>
                 </a>
             </li>
 
             <li>
                 <a href="../shared/login.html">
                     <i class="fa-solid fa-right-from-bracket"></i>
-                    <span>Logout</span>
+                    <span data-lang="logout">Logout</span>
                 </a>
             </li>
 
@@ -87,14 +75,17 @@
         <header class="topbar">
 
             <div>
-                <h1>Digital Library</h1>
-                <p>Browse, search, download, and translate educational resources.</p>
+                <h1 data-lang="digitalLibraryTitle">Digital Library</h1>
+                <p data-lang="digitalLibrarySubtitle">Browse, search, download, and translate educational resources.</p>
             </div>
 
-            <div class="user-profile">
-                <i class="fa-solid fa-circle-user"></i>
-                <span>Welcome, Jean</span>
-            </div>
+            <select id="languageSwitcher">
+
+                <option value="en">English</option>
+
+                <option value="rw">Kinyarwanda</option>
+
+            </select>   
 
         </header>
 
@@ -103,27 +94,9 @@
         <section class="cards">
 
             <div class="card">
-                <i class="fa-solid fa-book"></i>
-                <h3>Total Resources</h3>
-                <p>275</p>
-            </div>
-
-            <div class="card">
                 <i class="fa-solid fa-file-pdf"></i>
-                <h3>Books & PDFs</h3>
+                <h3 data-lang="libraryStatsBooksPdfs"> Total Books & PDFs</h3>
                 <p>190</p>
-            </div>
-
-            <div class="card">
-                <i class="fa-solid fa-video"></i>
-                <h3>Videos</h3>
-                <p>45</p>
-            </div>
-
-            <div class="card">
-                <i class="fa-solid fa-language"></i>
-                <h3>Translated Resources</h3>
-                <p>40</p>
             </div>
 
         </section>
@@ -134,11 +107,13 @@
 
             <input
                 type="text"
+                data-lang="librarySearchPlaceholder"
+                data-lang-attr="placeholder"
                 placeholder="Search by title, subject, language or keyword...">
 
             <button>
                 <i class="fa-solid fa-magnifying-glass"></i>
-                Search
+                <span data-lang="search">Search</span>
             </button>
 
         </section>
@@ -147,33 +122,25 @@
 
         <section class="activity">
 
-            <h2>Filter Resources</h2>
+            <h2 data-lang="filterResourcesTitle">Filter Resources</h2>
 
             <form>
 
                 <select>
-                    <option>All Subjects</option>
-                    <option>Mathematics</option>
-                    <option>Science</option>
-                    <option>Technology</option>
-                    <option>Engineering</option>
-                    <option>Languages</option>
+                    <option data-lang="filterAllSubjects">All Subjects</option>
+                    <option>Novel</option>
+                    <option>Readming</option>
                 </select>
 
                 <select>
-                    <option>All Languages</option>
+                    <option data-lang="filterAllLanguages">All Languages</option>
                     <option>English</option>
-                    <option>Kinyarwanda</option>
-                    <option>French</option>
-                    <option>Swahili</option>
                 </select>
 
                 <select>
-                    <option>All Types</option>
+                    <option data-lang="filterAllTypes">All Types</option>
                     <option>Book</option>
                     <option>PDF</option>
-                    <option>Video</option>
-                    <option>Presentation</option>
                 </select>
 
             </form>
@@ -186,7 +153,7 @@
 
         <section class="content-section">
 
-            <h2>Available Resources</h2>
+            <h2 data-lang="availableResourcesTitle">Available Resources</h2>
 
             <div class="resource-grid">
 
@@ -251,63 +218,6 @@
                 </div>
 
             </div>
-
-        </section>
-
-        <br>
-
-        <!-- Recent Downloads -->
-
-        <section class="activity">
-
-            <h2>Recently Accessed</h2>
-
-            <table>
-
-                <thead>
-
-                    <tr>
-                        <th>Title</th>
-                        <th>Category</th>
-                        <th>Language</th>
-                        <th>Last Accessed</th>
-                    </tr>
-
-                </thead>
-
-                <tbody>
-
-                    <tr>
-                        <td>Basic Algebra</td>
-                        <td>Mathematics</td>
-                        <td>English</td>
-                        <td>Today</td>
-                    </tr>
-
-                    <tr>
-                        <td>Physics Fundamentals</td>
-                        <td>Science</td>
-                        <td>English</td>
-                        <td>Yesterday</td>
-                    </tr>
-
-                    <tr>
-                        <td>Introduction to HTML</td>
-                        <td>Technology</td>
-                        <td>English</td>
-                        <td>2 Days Ago</td>
-                    </tr>
-
-                    <tr>
-                        <td>Kinyarwanda Grammar</td>
-                        <td>Languages</td>
-                        <td>Kinyarwanda</td>
-                        <td>3 Days Ago</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
 
         </section>
 

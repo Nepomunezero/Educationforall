@@ -30,49 +30,37 @@
             <li>
                 <a href="dashboard.html">
                     <i class="fa-solid fa-house"></i>
-                    <span>Dashboard</span>
+                    <span data-lang="dashboardTitle">Dashboard</span>
                 </a>
             </li>
 
             <li>
                 <a href="library.html">
                     <i class="fa-solid fa-book-open"></i>
-                    <span>Library</span>
+                    <span data-lang="library">Library</span>
                 </a>
             </li>
 
             <li>
                 <a href="translator.html">
                     <i class="fa-solid fa-language"></i>
-                    <span>Translator</span>
+                    <span data-lang="translator">Translator</span>
                 </a>
             </li>
 
-            <li>
-                <a href="favorites.html">
-                    <i class="fa-solid fa-heart"></i>
-                    <span>Favorites</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="history.html">
-                    <i class="fa-solid fa-clock-rotate-left"></i>
-                    <span>History</span>
-                </a>
-            </li>
+            
 
             <li class="active">
                 <a href="profile.html">
                     <i class="fa-solid fa-user"></i>
-                    <span>Profile</span>
+                    <span data-lang="profile">Profile</span>
                 </a>
             </li>
 
             <li>
                 <a href="../shared/login.html">
                     <i class="fa-solid fa-right-from-bracket"></i>
-                    <span>Logout</span>
+                    <span data-lang="logout">Logout</span>
                 </a>
             </li>
 
@@ -89,14 +77,17 @@
         <header class="topbar">
 
             <div>
-                <h1>My Profile</h1>
-                <p>View and update your personal information.</p>
+                <h1 data-lang="profilePageTitle">My Profile</h1>
+                <p data-lang="profilePageSubtitle">View and update your personal information.</p>
             </div>
 
-            <div class="user-profile">
-                <i class="fa-solid fa-circle-user"></i>
-                <span>Jean Nepo</span>
-            </div>
+            <select id="languageSwitcher">
+
+                <option value="en">English</option>
+
+                <option value="rw">Kinyarwanda</option>
+
+            </select>
 
         </header>
 
@@ -105,26 +96,14 @@
         <section class="cards">
 
             <div class="card">
-                <i class="fa-solid fa-book"></i>
-                <h3>Resources Read</h3>
-                <p>24</p>
-            </div>
-
-            <div class="card">
                 <i class="fa-solid fa-download"></i>
-                <h3>Downloads</h3>
+                <h3 data-lang="statsDownloads">Downloads</h3>
                 <p>18</p>
             </div>
 
             <div class="card">
-                <i class="fa-solid fa-heart"></i>
-                <h3>Favorites</h3>
-                <p>12</p>
-            </div>
-
-            <div class="card">
                 <i class="fa-solid fa-language"></i>
-                <h3>Translations</h3>
+                <h3 data-lang="statsTranslations">Translations</h3>
                 <p>9</p>
             </div>
 
@@ -136,7 +115,7 @@
 
             <h2>
                 <i class="fa-solid fa-user"></i>
-                Personal Information
+                <span data-lang="personalInfoTitle">Personal Information</span>
             </h2>
 
             <form>
@@ -147,35 +126,43 @@
 
                 <input
                     type="text"
+                    data-lang="fullNamePlaceholder"
+                    data-lang-attr="placeholder"
                     placeholder="Full Name"
                     value="Jean Nepo">
 
                 <input
                     type="email"
+                    data-lang="emailPlaceholder"
+                    data-lang-attr="placeholder"
                     placeholder="Email Address"
                     value="jean@example.com">
 
                 <input
                     type="tel"
+                    data-lang="phonePlaceholder"
+                    data-lang-attr="placeholder"
                     placeholder="Phone Number"
                     value="+250 7XX XXX XXX">
 
                 <input
                     type="text"
+                    data-lang="countryPlaceholder"
+                    data-lang-attr="placeholder"
                     placeholder="Country"
                     value="Rwanda">
 
                 <select>
 
-                    <option>Student</option>
-                    <option>Teacher</option>
-                    <option>Translator</option>
+                    <option data-lang="roleStudent">Student</option>
+                    <option data-lang="roleTeacher">Teacher</option>
+                    <option data-lang="roleTranslator">Translator</option>
 
                 </select>
 
                 <button type="submit">
                     <i class="fa-solid fa-floppy-disk"></i>
-                    Save Changes
+                    <span data-lang="saveChanges">Save Changes</span>
                 </button>
 
             </form>
@@ -190,82 +177,32 @@
 
             <h2>
                 <i class="fa-solid fa-lock"></i>
-                Change Password
+                <span data-lang="changePasswordTitle">Change Password</span>
             </h2>
 
             <form>
 
                 <input
                     type="password"
+                    data-lang="currentPasswordPlaceholder"
+                    data-lang-attr="placeholder"
                     placeholder="Current Password">
 
                 <input
                     type="password"
+                    data-lang="newPasswordPlaceholder"
+                    data-lang-attr="placeholder"
                     placeholder="New Password">
 
                 <input
                     type="password"
+                    data-lang="confirmPasswordPlaceholder"
+                    data-lang-attr="placeholder"
                     placeholder="Confirm New Password">
 
                 <button type="submit">
                     <i class="fa-solid fa-key"></i>
-                    Update Password
-                </button>
-
-            </form>
-
-        </section>
-
-        <br>
-
-        <!-- Preferences -->
-
-        <section class="activity">
-
-            <h2>
-                <i class="fa-solid fa-gear"></i>
-                Preferences
-            </h2>
-
-            <form>
-
-                <label>
-                    <input type="checkbox" checked>
-                    Receive Email Notifications
-                </label>
-
-                <br>
-
-                <label>
-                    <input type="checkbox" checked>
-                    Notify me about newly uploaded books
-                </label>
-
-                <br>
-
-                <label>
-                    <input type="checkbox">
-                    Enable Dark Mode
-                </label>
-
-                <br>
-
-                <label>
-                    Preferred Language
-                </label>
-
-                <select>
-
-                    <option>English</option>
-                    <option>Kinyarwanda</option>
-                    <option>French</option>
-                    <option>Swahili</option>
-
-                </select>
-
-                <button type="submit">
-                    <i class="fa-solid fa-check"></i>
-                    Save Preferences
+                    <span data-lang="updatePassword">Update Password</span>
                 </button>
 
             </form>

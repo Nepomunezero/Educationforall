@@ -30,49 +30,37 @@
             <li>
                 <a href="dashboard.html">
                     <i class="fa-solid fa-house"></i>
-                    <span>Dashboard</span>
+                    <span data-lang="dashboardTitle">Dashboard</span>
                 </a>
             </li>
 
             <li>
                 <a href="library.html">
                     <i class="fa-solid fa-book-open"></i>
-                    <span>Library</span>
+                    <span data-lang="library">Library</span>
                 </a>
             </li>
 
             <li class="active">
                 <a href="translator.html">
                     <i class="fa-solid fa-language"></i>
-                    <span>Translator</span>
+                    <span data-lang="translator">Translator</span>
                 </a>
             </li>
 
-            <li>
-                <a href="favorites.html">
-                    <i class="fa-solid fa-heart"></i>
-                    <span>Favorites</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="history.html">
-                    <i class="fa-solid fa-clock-rotate-left"></i>
-                    <span>History</span>
-                </a>
-            </li>
+            
 
             <li>
                 <a href="profile.html">
                     <i class="fa-solid fa-user"></i>
-                    <span>Profile</span>
+                    <span data-lang="profile">Profile</span>
                 </a>
             </li>
 
             <li>
                 <a href="../shared/login.html">
                     <i class="fa-solid fa-right-from-bracket"></i>
-                    <span>Logout</span>
+                    <span data-lang="logout">Logout</span>
                 </a>
             </li>
 
@@ -89,14 +77,17 @@
         <header class="topbar">
 
             <div>
-                <h1>Translation Workspace</h1>
-                <p>Translate educational content into your preferred language.</p>
+                <h1 data-lang="translationWorkspaceTitle">Translation Workspace</h1>
+                <p data-lang="translationWorkspaceSubtitle">Translate educational content into your preferred language.</p>
             </div>
 
-            <div class="user-profile">
-                <i class="fa-solid fa-circle-user"></i>
-                <span>Welcome, Jean</span>
-            </div>
+            <select id="languageSwitcher">
+
+                <option value="en">English</option>
+
+                <option value="rw">Kinyarwanda</option>
+
+            </select>
 
         </header>
 
@@ -105,58 +96,10 @@
         <section class="cards">
 
             <div class="card">
-                <i class="fa-solid fa-language"></i>
-                <h3>Translations</h3>
-                <p>9</p>
-            </div>
-
-            <div class="card">
-                <i class="fa-solid fa-file-lines"></i>
-                <h3>Documents</h3>
-                <p>5</p>
-            </div>
-
-            <div class="card">
-                <i class="fa-solid fa-clock"></i>
-                <h3>Hours Saved</h3>
-                <p>14</p>
-            </div>
-
-            <div class="card">
                 <i class="fa-solid fa-check-circle"></i>
-                <h3>Completed</h3>
+                <h3 data-lang="translatorStatsCompleted">Completed</h3>
                 <p>27</p>
             </div>
-
-        </section>
-
-        <!-- Translation Settings -->
-
-        <section class="activity">
-
-            <h2>Translation Settings</h2>
-
-            <form>
-
-                <select>
-                    <option>Source Language</option>
-                    <option>English</option>
-                    <option>Kinyarwanda</option>
-                    <option>French</option>
-                    <option>Swahili</option>
-                </select>
-
-                <select>
-                    <option>Target Language</option>
-                    <option>Kinyarwanda</option>
-                    <option>English</option>
-                    <option>French</option>
-                    <option>Swahili</option>
-                </select>
-
-                <input type="file">
-
-            </form>
 
         </section>
 
@@ -170,9 +113,11 @@
 
             <div class="activity">
 
-                <h2>Source Text</h2>
+                <h2 data-lang="sourceTextTitle">Source Text</h2>
 
                 <textarea rows="18"
+                    data-lang="sourceTextPlaceholder"
+                    data-lang-attr="placeholder"
                     placeholder="Paste the text you want to translate here..."></textarea>
 
             </div>
@@ -181,9 +126,11 @@
 
             <div class="activity">
 
-                <h2>Translated Text</h2>
+                <h2 data-lang="translatedTextTitle">Translated Text</h2>
 
                 <textarea rows="18"
+                    data-lang="translatedTextPlaceholder"
+                    data-lang-attr="placeholder"
                     placeholder="The translated text will appear here..."
                     readonly></textarea>
 
@@ -197,89 +144,10 @@
 
         <section class="quick-actions">
 
-            <h2>Translation Actions</h2>
-
             <button>
                 <i class="fa-solid fa-language"></i>
-                Translate
+                <span data-lang="submit">Submit</span>
             </button>
-
-            <button>
-                <i class="fa-solid fa-copy"></i>
-                Copy Translation
-            </button>
-
-            <button>
-                <i class="fa-solid fa-download"></i>
-                Download
-            </button>
-
-            <button>
-                <i class="fa-solid fa-bookmark"></i>
-                Save Translation
-            </button>
-
-            <button>
-                <i class="fa-solid fa-eraser"></i>
-                Clear
-            </button>
-
-        </section>
-
-        <br>
-
-        <!-- Recent Translations -->
-
-        <section class="activity">
-
-            <h2>Recent Translations</h2>
-
-            <table>
-
-                <thead>
-
-                    <tr>
-                        <th>Date</th>
-                        <th>Document</th>
-                        <th>Languages</th>
-                        <th>Status</th>
-                    </tr>
-
-                </thead>
-
-                <tbody>
-
-                    <tr>
-                        <td>15 Jul 2026</td>
-                        <td>Basic Algebra</td>
-                        <td>English → Kinyarwanda</td>
-                        <td>Completed</td>
-                    </tr>
-
-                    <tr>
-                        <td>14 Jul 2026</td>
-                        <td>Physics Notes</td>
-                        <td>English → French</td>
-                        <td>Completed</td>
-                    </tr>
-
-                    <tr>
-                        <td>12 Jul 2026</td>
-                        <td>Chemistry Notes</td>
-                        <td>English → Swahili</td>
-                        <td>Completed</td>
-                    </tr>
-
-                    <tr>
-                        <td>10 Jul 2026</td>
-                        <td>Programming Basics</td>
-                        <td>French → English</td>
-                        <td>Completed</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
 
         </section>
 

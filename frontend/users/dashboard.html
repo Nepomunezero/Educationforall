@@ -30,56 +30,42 @@
             <li class="active">
                 <a href="dashboard.html">
                     <i class="fa-solid fa-house"></i>
-                    <span>Dashboard</span>
+                    <span data-lang="dashboardTitle">Dashboard</span>
                 </a>
             </li>
 
             <li>
                 <a href="library.html">
                     <i class="fa-solid fa-book-open"></i>
-                    <span>Library</span>
+                    <span data-lang="library">Library</span>
                 </a>
             </li>
 
             <li>
                 <a href="translator.html">
                     <i class="fa-solid fa-language"></i>
-                    <span>Translator</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="favorites.html">
-                    <i class="fa-solid fa-heart"></i>
-                    <span>Favorites</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="history.html">
-                    <i class="fa-solid fa-clock-rotate-left"></i>
-                    <span>History</span>
+                    <span data-lang="translator">Translator</span>
                 </a>
             </li>
 
             <li>
                 <a href="profile.html">
                     <i class="fa-solid fa-user"></i>
-                    <span>Profile</span>
+                    <span data-lang="profile">Profile</span>
                 </a>
             </li>
 
             <li>
                 <a href="../shared/login.html">
                     <i class="fa-solid fa-right-from-bracket"></i>
-                    <span>Logout</span>
+                    <span data-lang="logout">Logout</span>
                 </a>
             </li>
 
         </ul>
 
     </aside>
-
+    
     <!-- Main Content -->
 
     <main class="main-content">
@@ -89,14 +75,17 @@
         <header class="topbar">
 
             <div>
-                <h1>Dashboard</h1>
-                <p>Welcome back! Continue learning and translating educational content.</p>
+                <h1 data-lang="dashboardTitle">Dashboard</h1>
+                <p data-lang="welcomeMessage">Welcome back! Continue translating educational content.</p>
             </div>
 
-            <div class="user-profile">
-                <i class="fa-solid fa-circle-user"></i>
-                <span>Welcome, Jean</span>
-            </div>
+            <select id="languageSwitcher">
+
+                <option value="en">English</option>
+
+                <option value="rw">Kinyarwanda</option>
+
+            </select>
 
         </header>
 
@@ -106,26 +95,20 @@
 
             <div class="card">
                 <i class="fa-solid fa-book"></i>
-                <h3>Books Read</h3>
+                <h3 data-lang="statsBooksRead">Books Read</h3>
                 <p>24</p>
             </div>
 
             <div class="card">
                 <i class="fa-solid fa-download"></i>
-                <h3>Downloads</h3>
+                <h3 data-lang="statsDownloads">Downloads</h3>
                 <p>18</p>
             </div>
 
             <div class="card">
                 <i class="fa-solid fa-language"></i>
-                <h3>Translations</h3>
+                <h3 data-lang="statsTranslations">Translations</h3>
                 <p>9</p>
-            </div>
-
-            <div class="card">
-                <i class="fa-solid fa-heart"></i>
-                <h3>Favorites</h3>
-                <p>12</p>
             </div>
 
         </section>
@@ -136,11 +119,13 @@
 
             <input
                 type="text"
+                data-lang="searchPlaceholder"
+                data-lang-attr="placeholder"
                 placeholder="Search books, notes, or learning resources...">
 
             <button>
                 <i class="fa-solid fa-magnifying-glass"></i>
-                Search
+                <span data-lang="search">Search</span>
             </button>
 
         </section>
@@ -149,36 +134,36 @@
 
         <section class="content-section">
 
-            <h2>Recently Added Resources</h2>
+            <h2 data-lang="recentResourcesTitle">Recently Added Resources</h2>
 
             <div class="resource-grid">
 
                 <div class="resource-card">
                     <i class="fa-solid fa-book-open"></i>
-                    <h3>Basic Algebra</h3>
+                    <h3 data-lang="resourceAlgebra">Basic Algebra</h3>
                     <p>Mathematics</p>
-                    <button>Open</button>
+                    <button data-lang="open">Open</button>
                 </div>
 
                 <div class="resource-card">
                     <i class="fa-solid fa-atom"></i>
-                    <h3>Physics Fundamentals</h3>
+                    <h3 data-lang="resourcePhysics">Physics Fundamentals</h3>
                     <p>Science</p>
-                    <button>Open</button>
+                    <button data-lang="open">Open</button>
                 </div>
 
                 <div class="resource-card">
                     <i class="fa-solid fa-laptop-code"></i>
-                    <h3>Introduction to HTML</h3>
+                    <h3 data-lang="resourceHtml">Introduction to HTML</h3>
                     <p>Technology</p>
-                    <button>Open</button>
+                    <button data-lang="open">Open</button>
                 </div>
 
                 <div class="resource-card">
                     <i class="fa-solid fa-language"></i>
-                    <h3>French Dictionary</h3>
+                    <h3 data-lang="resourceDictionary">French Dictionary</h3>
                     <p>Languages</p>
-                    <button>Open</button>
+                    <button data-lang="open">Open</button>
                 </div>
 
             </div>
@@ -193,7 +178,7 @@
 
             <div class="activity">
 
-                <h2>Recent Activity</h2>
+                <h2 data-lang="recentActivityTitle">Recent Activity</h2>
 
                 <ul>
 
@@ -225,26 +210,21 @@
 
             <div class="quick-actions">
 
-                <h2>Quick Actions</h2>
+                <h2 data-lang="quickActionsTitle">Quick Actions</h2>
 
                 <button onclick="location.href='library.html'">
                     <i class="fa-solid fa-book-open"></i>
-                    Browse Library
+                    <span data-lang="browseLibrary">Browse Library</span>
                 </button>
 
                 <button onclick="location.href='translator.html'">
                     <i class="fa-solid fa-language"></i>
-                    Open Translator
-                </button>
-
-                <button onclick="location.href='favorites.html'">
-                    <i class="fa-solid fa-heart"></i>
-                    View Favorites
+                    <span data-lang="openTranslator">Open Translator</span>
                 </button>
 
                 <button onclick="location.href='profile.html'">
                     <i class="fa-solid fa-user"></i>
-                    Edit Profile
+                    <span data-lang="editProfile">Edit Profile</span>
                 </button>
 
             </div>
