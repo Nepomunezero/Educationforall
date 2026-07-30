@@ -96,6 +96,18 @@ EducationForAll/
 │
 ├── backend/
 │   └── data/
+│       ├── books/
+│       │   └── [book files]
+│       ├── images/
+│       │   └── [resource images]
+│       ├── books.json
+│       └── users.json
+│
+├── docs/
+│   └── [project documentation]
+│
+├── diagrams/
+│   └── [system diagrams]
 │
 └── README.md
 ```
